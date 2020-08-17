@@ -1,0 +1,125 @@
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family     : 'Montserrat', sans-serif;
+    min-height      : 100vh;
+    width           : 100%;
+    font-size       : 14px;
+    background-color: #acd0ff;
+    color           : #303030;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+}
+
+.signup-container {
+    width   : 380px;
+    position: relative;
+}
+
+.form-container {
+    position      : relative;
+    z-index       : 2;
+    background    : #fff;
+    box-shadow    : 0px 0px 12px 0px rgba(0, 0, 0, 0.3);
+    padding       : 40px 56px;
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+}
+
+img {
+    width    : 100%;
+    max-width: 100%;
+}
+
+.img-1 {
+    position : absolute;
+    left     : 0%;
+    bottom   : -10px;
+    max-width: 240px;
+    transform: translateX(-85%);
+    z-index  : 3;
+}
+
+.img-2 {
+    position : absolute;
+    right    : 0%;
+    bottom   : -10px;
+    max-width: 130px;
+    z-index  : 1;
+    transform: translateX(85%);
+}
+
+.title {
+    text-transform: uppercase;
+    font-size     : 2em;
+    font-weight   : bold;
+    letter-spacing: 1px;
+    margin-bottom : 40px;
+}
+
+.signup-form {
+    width         : 100%;
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+}
+
+.form-item {
+    width   : 100%;
+    position: relative;
+}
+
+.form-item input {
+    font-family   : 'Montserrat', sans-serif;
+    font-size     : 1.1em;
+    border        : none;
+    outline       : none;
+    width         : 100%;
+    height        : 45px;
+    color         : #525252;
+    border-bottom : 1px solid #e6e6e6;
+    padding-left  : 32px;
+    letter-spacing: 0.5px;
+    margin-bottom : 24px;
+}
+
+.form-item:last-of-type input {
+    margin-bottom: 48px;
+}
+
+.form-item input:focus {
+    border-bottom: 1px solid #acd0ff;
+}
+
+.form-item i {
+    position   : absolute;
+    left       : 0;
+    height     : 48px;
+    line-height: 48px;
+    font-size  : 1em;
+    color      : #303030;
+}
+
+button[type="submit"] {
+    border          : none;
+    outline         : none;
+    background-color: #96c9fd;
+    color           : #fff;
+    text-transform  : uppercase;
+    letter-spacing  : 1px;
+    font-size       : 1.1em;
+    font-weight     : bolder;
+    padding         : 10px 32px;
+    cursor          : pointer;
+    transition      : background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #96c9e0fd;
+}
